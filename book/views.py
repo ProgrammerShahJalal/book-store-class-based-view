@@ -17,7 +17,7 @@ class MyTemplateView(TemplateView):
     template_name = 'home.html'
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context = {'name' : 'rahim', 'age' : 21}
+        context = {'name' : 'Shah Jalal', 'age' : 24}
         print(kwargs)
         context.update(kwargs) #dictionary update kora
         print(context)
